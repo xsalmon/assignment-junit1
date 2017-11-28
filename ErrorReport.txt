@@ -1,0 +1,8 @@
+errors with Circle1:
+   on lines 14 and 15 there is nothing to handle if the circles have the same center. The test that found this was the intersectSameCenterDifferentRadius test and to fix it I added a check to make sure that the x and y componets of the circles were not both the same.
+errors with Circle2:
+   on line 9 of Circle2 the varables x and y were flipped in positions for the input. The test that found that was the correctCoordinates test, to fix it I put the variables in the correct order.
+   on line 17  if you enter a negative radius by accident there is nothing to fix that and the output will be incorrect, I honestly found this by accident when I entered a negative radius, to fix it I took the absolute value of the radius in the if statement it was in.
+   on line 17 there is nothing to handle if the circles have the same center, I found this with the intersectSameCenterDifferentRadius test and to fix it I added a check to make sure that the variable d was greater then 0 to the if statement.
+error with Circle:
+   on line 37 the math to scale was not correct, it was adding the scaling factor  instead of multiplying. The test that found this first was the simpleScaleUp and i fixed it by replacing the addition symbol with the multiplication symbol.
